@@ -1,0 +1,35 @@
+{
+    "name": "orgasmicnightmare/cakephp-absolute-admin-theme",
+    "license": "MIT",
+    "description": "CakePHP 3 utitilies to use the AbsoluteAdmin Bootstrap template (https://wrapbootstrap.com/theme/absoluteadmin-bootstrap-admin-template-WB0822090)",
+    "type": "cakephp-plugin",
+    "authors": [
+        {
+            "name": "Olivier Sazos",
+            "email": "contact@oliviersazos.fr",
+            "homepage": "http://oliviersazos.fr"
+        }
+    ],
+    "require": {
+        "cakephp/cakephp": "~3.0",
+        "friendsofcake/crud": "*",
+        "friendsofcake/crud-view": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "suggest": {
+        "cakephp/migrations": "Database Migration plugin for CakePHP 3.0 based on Phinx"
+    },
+    "autoload": {
+        "psr-4": {
+            "AbsoluteAdmin\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AbsoluteAdmin\\Test\\": "tests",
+            "AbsoluteAdmin\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
